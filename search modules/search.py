@@ -63,6 +63,9 @@ class Search:
         res3=[]
         for i in final_arg:
             res3.append(res[i-1])
+        
+        if len(self.word_array) == 1:
+            res3 = res
             
         print("algo1&2_result       "+str(res))
         print("algo1_freq_result    "+str(res1))
