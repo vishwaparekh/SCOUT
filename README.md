@@ -42,7 +42,7 @@ sorted based on the keyword distance score, K.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 TECHNICAL DETAILS:-
-# Algorithm 1 (Ranking of pages based on TF-IDF measure) 
+## Algorithm 1 (Ranking of pages based on TF-IDF measure) 
 Ranking of pages based on TF-IDF measure :
   
   
@@ -51,19 +51,19 @@ We gave TF-IDF score to each page of pdf by divide how many times a keyword appe
 ![image](https://user-images.githubusercontent.com/49832962/139417598-e520e5ee-7fa7-4a79-9dff-cc75ef0effa7.png)
 
 
-# Algorithm - 2 (For Capital Letters)
+## Algorithm - 2 (For Highlighted words)
 The same algorithm is applied for capital keywords. As capital words have more priority because titles and important words are in the capital for the whole PDF.
 
 ![image](https://user-images.githubusercontent.com/49832962/139417800-22e66403-0a38-4ec2-b567-81eaaa00f3c5.png)
 
 
-# Algorithm - 3 (Nearest keywords algorithm)
+## Algorithm - 3 (Nearest keywords algorithm)
 We made a dictionary that can store the index of keywords. Let dictionary be dict
 
 GOAL:- goal is to find the page which possesses the nearest query keywords.  
 For finding a score for a particular page the process is given below:  
   
-- 5 pages are selected from previous frequency based algorithms   
+- top 5 pages are selected from previous frequency based algorithms   
 - Score is given to each page for the query using the nearest keyword algorithm.     
 - In the nearest keyword algorithm , score is assigned to selected pages based on the minimum interval of indices where all possible keywords of the query are present.
 - If  a keyword is not present in the page then we simply exclude that keyword and score is normalized accordingly.
