@@ -29,5 +29,10 @@ For finding a score for a particular page the process is given below:
 
 ![image](https://user-images.githubusercontent.com/49832962/139418376-03d10a5e-5ac7-4463-bc7c-d17131cf1d71.png)
 
+![image](https://user-images.githubusercontent.com/49832962/139419221-122e6462-fdad-4b97-9cd7-260216e8aad4.png)
+Figure demonstrates how algorithm finds minimum interval between query keywords
+![image](https://user-images.githubusercontent.com/49832962/139419307-942c8da2-6c27-4e3a-8c5f-1245a4b92d42.png)
+
+
 
 
