@@ -1,3 +1,28 @@
 # SCOUT
-Semantic search engine for Clinical Oncology guideline Understanding and  Treatment planning
+##Semantic search engine for Clinical Oncology guideline Understanding and  Treatment planning
+
+# Algorithm 1 (Ranking of pages based on TF-IDF measure) 
+The query is split into keywords
+
+
+We gave TF-IDF score to each page of pdf by multiplying how many times a keyword appears on a page by the inverse of the frequency of keyword across pdf.
+
+
+Let’s say the query (Q) is “brain cancer” it will be split into keywords  “brain’’ and “cancer” and the TF-IDF score will be calculated for every keyword on every page. 
+
+Let no of pages in pdf be m.
+
+TF-IDF score for particular page= ⅀ (frequency of keyword in particular page)*(frequency of keyword in pdf)-1
+
+Let the number of keywords in the query be n. Therefore(, keywords are K1,K2……, Kn.
+c
+
+Ti is the TF-IDF score of ith page for the query Q.
+
+So T will be an array of size m such that T = {T1,T2 ,T3,.....,Tm}
+
+# Algorithm - 2 For Capital Letters
+The same algorithm is applied for capital keywords. As capital words have more priority because titles and important words are in the capital for the whole PDF.
+
+
 ![1](https://user-images.githubusercontent.com/49832962/139058569-35154f7d-5968-4eb9-9e12-6ebad3880ed5.png)
