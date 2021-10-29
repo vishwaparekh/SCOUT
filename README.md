@@ -71,6 +71,7 @@ For finding a score for a particular page the process is given below:
 - If  a keyword is not present in the page then we simply exclude that keyword and score is normalized accordingly.
 
 ![image](https://user-images.githubusercontent.com/49832962/139418376-03d10a5e-5ac7-4463-bc7c-d17131cf1d71.png)
+  
 here i(x,y) denotes the index of word in the particular page of pdf
 ![image](https://user-images.githubusercontent.com/49832962/139419221-122e6462-fdad-4b97-9cd7-260216e8aad4.png)  
 Figure demonstrates how algorithm finds minimum interval between query keywords  
