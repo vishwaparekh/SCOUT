@@ -48,7 +48,8 @@ Ranking of pages based on TF-IDF measure :
   
 We gave TF-IDF score to each page of pdf by divide how many times a keyword appears on a page by the frequency of keyword across pdf.
 
-![image](https://user-images.githubusercontent.com/49832962/139417598-e520e5ee-7fa7-4a79-9dff-cc75ef0effa7.png)
+![139417598-e520e5ee-7fa7-4a79-9dff-cc75ef0effa7](https://user-images.githubusercontent.com/49832962/139422212-2541c79b-2913-4305-b169-400fabf3e29f.png)
+
 
 
 #### Algorithm - 2 (For Highlighted words)
