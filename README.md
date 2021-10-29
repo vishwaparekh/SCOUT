@@ -5,8 +5,8 @@
 
 #### 1. Introduction
 Cancer is one of the largest public health burdens across the world. One out of every four
-deaths in the United States is due to cancer [1] . Furthermore, there are nearly 140 patients per
-oncologist [2] . The process of clinical decision-making is the essence of everyday clinical
+deaths in the United States is due to cancer. Furthermore, there are nearly 140 patients per
+oncologist. The process of clinical decision-making is the essence of everyday clinical
 practice. Oncology guidelines, such as NCCN guidelines, form a key component of clinical
 decision making. However, most of the clinical guidelines are available in the PDF or text format
 and span over hundreds of pages. In the current scenario, oncologists rely on keyword-based
@@ -42,7 +42,7 @@ sorted based on the keyword distance score, K.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## TECHNICAL DETAILS:-
-#### Algorithm 1 (Ranking of pages based on TF-IDF measure) 
+#### Algorithm - 1 (Ranking of pages based on TF-IDF measure) 
 Ranking of pages based on TF-IDF measure :
   
   
@@ -61,7 +61,7 @@ The same algorithm is applied for capital keywords. As capital words have more p
 #### Algorithm - 3 (Nearest keywords algorithm)
 We made a dictionary that can store the index of keywords. Let dictionary be dict
 
-GOAL:- goal is to find the page which possesses the nearest query keywords.  
+GOAL:- To find the page which possesses the nearest query keywords.  
 For finding a score for a particular page the process is given below:  
   
 - top 5 pages are selected from previous frequency based algorithms   
