@@ -59,9 +59,10 @@ The same algorithm is applied for capital keywords. As capital words have more p
 
 
 #### Algorithm - 3 (Nearest keywords algorithm)
-We made a dictionary that can store the index of keywords. Let dictionary be dict
 
-GOAL:- To find the page which possesses the nearest query keywords.  
+GOAL:- To find the page which possesses the all query keywords with minimal keyword distance.  
+minimal keyword distance:- no of words which come in between query keywords in actual data.  
+
 For finding a score for a particular page the process is given below:  
   
 - top 5 pages are selected from previous frequency based algorithms   
