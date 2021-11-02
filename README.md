@@ -1,46 +1,6 @@
 # SCOUT
 ## Semantic search engine for Clinical Oncology guideline Understanding and  Treatment planning
 
-## Abstract
-
-#### 1. Introduction
-Cancer is one of the largest public health burdens across the world. One out of every four
-deaths in the United States is due to cancer. Furthermore, there are nearly 140 patients per
-oncologist. The process of clinical decision-making is the essence of everyday clinical
-practice. Oncology guidelines, such as NCCN guidelines, form a key component of clinical
-decision making. However, most of the clinical guidelines are available in the PDF or text format
-and span over hundreds of pages. In the current scenario, oncologists rely on keyword-based
-search to query a particular treatment guideline, which has many disadvantages. One, the
-oncologist can only type in one keyword or an exact phrase which is not always possible.
-Second, the keyword query may produce many irrelevant results, rendering it impractical. As a
-result, finding the correct treatment plan using just the keyword search is time-consuming and
-unreliable. When multiple options need to be considered, balancing between accuracy and
-speed in decision making is challenging. To that end, we developed SCOUT, a semantic search
-algorithm for oncology clinical guidelines, that would provide an integrated search platform
-across multiple clinical guidelines. The SCOUT was implemented and evaluated on the NCCN
-guidelines using five different cancer types: breast cancer, prostate cancer, lung cancer, brain
-cancer, and gastric cancer.
-
-#### Step 1: Simple TF-IDF
-The TF-IDF (D i ) score characterizes the likelihood of the search query being present on a page,
-i. The TF-IDF score is computed by aggregating the frequency score of every keyword in the
-search query as follows:
-
-#### Step 2: Heuristic TF-IDF
-The second step involves computing a TF-IDF score using a domain-specific dictionary by
-weighing domain-specific keywords significantly higher than regular English keywords
-
-#### Step 3: Compute Keyword Distances
-In this step, the pages are ranked based on the relative distance between different keywords in
-the search query. The keyword distance score for each page is computed as the minimum
-number of sequential words that encompasses all the keywords present in the search query. If a
-page does not contain all the keywords, the score is normalized using the Nearest keywords algorithm.
-
-#### Step 4: The final step involves identifying and sorting the top-k matches
-wherein, the top-k pages are selected using the scores from Step 1 and Step 2. The resultant top-k pages are then
-sorted based on the keyword distance score, K.
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ## TECHNICAL DETAILS:-
 #### Algorithm - 1 (Ranking of pages based on TF-IDF measure) 
 Ranking of pages based on TF-IDF measure :
@@ -52,9 +12,8 @@ We gave TF-IDF score to each page of pdf by divide how many times a keyword appe
 
 
 
-#### Algorithm - 2 (For Highlighted words)
-The same algorithm is applied for capital keywords. As capital words have more priority because titles and important words are in the capital for the whole PDF.
-
+#### Algorithm - 2 (Heuristic TF-IDF)
+The second step involves computing a TF-IDF score using a domain-specific dictionary by weighing domain-specific keywords significantly higher than regular English keywords
 ![image](https://user-images.githubusercontent.com/49832962/139417800-22e66403-0a38-4ec2-b567-81eaaa00f3c5.png)
 
 
