@@ -19,7 +19,7 @@ class Search:
         #count frequecy of words in document
         ss=""
         for i in self.word_array:
-            ss=ss+i;
+            ss=ss+i
         self.unique_dic=Counter(ss.lower().split())
         
         #extract capital word from the word array
@@ -63,9 +63,6 @@ class Search:
         res3=[]
         for i in final_arg:
             res3.append(res[i-1])
-        
-        if len(self.word_array) == 1:
-            res3 = res
             
         print("algo1&2_result       "+str(res))
         print("algo1_freq_result    "+str(res1))
