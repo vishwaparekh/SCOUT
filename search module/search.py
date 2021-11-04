@@ -2,6 +2,7 @@ import json
 import numpy as np
 import pickle
 from collections import Counter
+import PIL
 
 class Search:
     
@@ -9,14 +10,14 @@ class Search:
         self.filename = filename
         self.fp=open(self.filename, "rb") 
         self.word_array = pickle.load(self.fp)
-        
-        #count frequecy of words in page 
+        self.query_length=0
+        #count frequency of words in page 
         lst=[]
         for i in self.word_array:
             lst.append(Counter(i.lower().split()))
         self.page_lst=lst
         
-        #count frequecy of words in document
+        #count frequency of words in document
         ss=""
         for i in self.word_array:
             ss=ss+i
@@ -31,23 +32,23 @@ class Search:
                     cap_str=cap_str+" "+j
             self.cap_lst.append(cap_str)
             
-        #count frequecy of capital words in page
+        #count frequency of capital words in page
         lst=[]
         for i in self.cap_lst:
             lst.append(Counter(i.lower().split()))
 
         self.cap_page_lst=lst
         
-        #count frequecy of capital words in document
+        #count frequency of capital words in document
         ss=""
         for i in self.cap_lst:
-            ss=ss+i;
+            ss=ss+i
         self.cap_unique_dic=Counter(ss.lower().split())
         
         
     
     def call_query(self,query):
-        
+        self.query_length=len(query.split())
         ans1=self.algo1(query)
         ans2=self.algo2(query)
         ans=ans1+ans2
@@ -63,11 +64,19 @@ class Search:
         res3=[]
         for i in final_arg:
             res3.append(res[i-1])
+        
+        if self.query_length == 1:
+            res3 = res    
             
         print("algo1&2_result       "+str(res))
         print("algo1_freq_result    "+str(res1))
         print("algo2_capital_result "+str(res2))
         print("final_result         "+str(res3))
+        
+        im = PIL.Image.open("data/"+self.filename[:-4]+"/"+str(res3[0])+".jpg")  
+        im.show() 
+  
+
         
     def algo1 (self,query):
         answer_vector=np.zeros(len(self.word_array),dtype=float)
