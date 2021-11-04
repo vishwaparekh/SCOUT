@@ -8,7 +8,7 @@ class Search:
     
     def __init__ (self , filename):
         self.filename = filename
-        self.fp=open(self.filename, "rb") 
+        self.fp=open("data/"+self.filename, "rb") 
         self.word_array = pickle.load(self.fp)
         self.query_length=0
         #count frequency of words in page 

@@ -38,5 +38,5 @@ class Extract:
             
             
         
-        with open(filename+".npy", "wb") as fp:   
+        with open("data/"+filename+".npy", "wb") as fp:   
             pickle.dump(b, fp)
