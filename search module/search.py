@@ -8,7 +8,7 @@ class Search:
     
     def __init__ (self , filename):
         self.filename = filename
-        self.fp=open("data/"+self.filename, "rb") 
+        self.fp=open("data/"+self.filename+".npy", "rb") 
         self.word_array = pickle.load(self.fp)
         self.query_length=0
         #count frequency of words in page 
@@ -73,7 +73,7 @@ class Search:
         print("algo2_capital_result "+str(res2))
         print("final_result         "+str(res3))
         
-        im = PIL.Image.open("data/"+self.filename[:-4]+"/"+str(res3[0])+".jpg")  
+        im = PIL.Image.open("data/"+self.filename+"/"+str(res3[0])+".jpg")  
         im.show() 
   
 
