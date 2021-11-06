@@ -19,9 +19,16 @@ pip install -r .\requirements.txt
    (NOTE: this step is only required if you want to use scout engine for new pdf.)
  
 4. To use scout search engine: 
+
 ```
 search = Search("prostate_blocks")
 search.call_query("show therapy for M1 crpc")
 ```  
-   -> This will initiate scout engine for 'prostate blocks guidelines' and find out relevant pages for query of search.call_query("show therapy for M1 crpc")  
-   -> User can configure pdf name and search query from query.py itself.
+   - This will initiate scout engine for 'prostate blocks guidelines' and find out relevant pages for query of 'show therapy for M1 crpc'
+   - User can configure guidelines name and search query from query.py itself.
+   
+5. To use scout engine for new guidelines. 
+```
+from extract import Extract
+#a=Extract("gastric_blocks")
+```  
