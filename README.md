@@ -27,8 +27,8 @@ search.call_query("show therapy for M1 crpc")
    - This will initiate scout engine for 'prostate blocks guidelines' and find out relevant pages for query of 'show therapy for M1 crpc'
    - User can configure guidelines name and search query from query.py itself.
    
-5. To use scout engine for new guidelines. 
+5. To use scout engine for new guidelines, keep a pdf file of guidelines in scout folder and write following code. 
 ```
 from extract import Extract
-#a=Extract("gastric_blocks")
+#a=Extract("<guidelines_name>")
 ```  
