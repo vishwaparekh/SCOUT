@@ -18,7 +18,7 @@ copy paths of installled pytesseract and poppler and paste it in extract.py file
 
 (NOTE: this step is only required if you want to use scout engine for new pdf.)
 
-4.navigate to search modules folder and then modify queries and pdf_name in file of quert.py to use scout search engine: 
+4.navigate to search modules folder and then modify queries and pdf_name in file of query.py to use scout search engine: 
 
 This will initiate scout engine and find out relevant pages
 
