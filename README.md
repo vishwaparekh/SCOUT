@@ -4,13 +4,13 @@
  
 ## How to run the Project? 
 1. Download the Repo and navigate to the respective folder and start the Command Line Interface.
-2. Type the following command: 
+2. Type the following command to install all the requirements: 
 
 ```
 pip install -r .\requirements.txt
 ```  
 
-This will install all the requirements.  
+ 
 
 3. Install pytesseract from https://github.com/tesseract-ocr/tesseract/releases   
    And poppler from https://poppler.freedesktop.org/  according to specification of your machines.   
