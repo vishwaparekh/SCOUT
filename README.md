@@ -23,5 +23,5 @@ pip install -r .\requirements.txt
 search = Search("prostate_blocks")
 search.call_query("show therapy for M1 crpc")
 ```  
-    This will initiate scout engine for 'prostate blocks guidelines' and find out relevant pages for query of search.call_query("show therapy for M1 crpc")  
-    User can configure pdf name and search query from query.py itself.
+   -> This will initiate scout engine for 'prostate blocks guidelines' and find out relevant pages for query of search.call_query("show therapy for M1 crpc")  
+   -> User can configure pdf name and search query from query.py itself.
