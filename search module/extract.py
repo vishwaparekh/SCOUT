@@ -7,9 +7,9 @@ import pickle
 
 class Extract:
      def __init__ (self , filename):
-        pages = pdf2image.convert_from_path("data/"+filename+".pdf",poppler_path = r"C:/Users/Dharmam Savani/poppler-/bin")
+        pages = pdf2image.convert_from_path("data/"+filename+".pdf",poppler_path = r"poppler_path")
         Path("data/"+filename).mkdir(parents=True, exist_ok=True)
-        pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
+        pytesseract.pytesseract.tesseract_cmd = 'tesseract_path'
         
     
         y=0
