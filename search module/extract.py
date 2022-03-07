@@ -9,7 +9,7 @@ class Extract:
      def __init__ (self , filename):
         pages = pdf2image.convert_from_path("data/"+filename+".pdf")
         Path("data/"+filename).mkdir(parents=True, exist_ok=True)
-        pytesseract.pytesseract.tesseract_cmd = 'tesseract_path'
+        #pytesseract.pytesseract.tesseract_cmd = 'tesseract_path'
         
     
         y=0
