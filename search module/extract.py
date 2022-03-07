@@ -7,7 +7,7 @@ import pickle
 
 class Extract:
      def __init__ (self , filename):
-        pages = pdf2image.convert_from_path("data/"+filename+")
+        pages = pdf2image.convert_from_path("data/"+filename)
         Path("data/"+filename).mkdir(parents=True, exist_ok=True)
         pytesseract.pytesseract.tesseract_cmd = 'tesseract_path'
         
